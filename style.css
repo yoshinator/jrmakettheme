@@ -161,6 +161,9 @@ span.market{
 
 /* END HEADER */
 
+
+
+/* BEGIN BANNER */
 #main-banner, #main-banner img {
     width: 100%;
 
@@ -205,22 +208,6 @@ span.market{
     margin: 1rem auto;
 }
 
-#main-banner label {
-    font-size: .8vw;
-    color: #fff;
-    width: 50%;
-    margin: auto;
-    text-align: left;
-    display: block;
-}
-
-#main-banner input {
-    width: 50%;
-    height: 30%;
-    margin: 5px auto;
-    display: block;
-    font-size: 2vw;
-}
 
 #main-banner button {
     position: relative;
@@ -240,4 +227,17 @@ span.market{
     background-color: #8B6;
     transform: translateY(-3px)
 
+}
+
+@media (max-width: 48em) {
+    #inner-content h3{
+        display: none;
+    }
+
+    #main-banner button {
+        width: 40%;
+        height: 5%;
+        font-size: 1.3em;
+        font-weight: 600;
+    }
 }
