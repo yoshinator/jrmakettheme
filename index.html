@@ -5,28 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Junk Removal Source</title>
 </head>
 
 <body>
-    <header class="header">
-        <a href="" class="logo">Junk Removal <span class="market">Source</span></a>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu">
-            <li><a href="#wedo">What we do</a></li>
-            <li><a href="#hauler">Become a hauler</a></li>
-            <li><a href="#services">Services</a></li>
-        </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Junk Removal <span>Source</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">What We Do<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Become a Hauler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
     </header>
     <!-- Start home pagecontent -->
-    <div id="main-banner">
-        <img src="images/banner-image.jpg" alt="Welcome To Junk Removal Source">
-        <div id="inner-content">
-            <h4>Compare lowest prices from local junk removal companies</h4>
-            <h3>Get a Free Quote Fast!</h3>
+    <div id="main-banner" class="jumbotron p-0 position-relative ">
+        <img src="images/banner-image.jpg" class="jumbotronImage " alt="Welcome To Junk Removal Source">
+        <div id="inner-content" class="position-absolute text-center">
+            <h4 class="d-none d-sm-block">Compare lowest prices from local junk removal companies</h4>
+            <h3 class="d-none d-sm-block">Get a Free Quote Fast!</h3>
             <h4>Get more info just tell us what you need to remove</h4>
-                <button>Get a Free Quote</button>
+            <a href="#" class="btn btn-success my-3">Get a Free Quote</a>
 
         </div>
     </div>
@@ -139,5 +154,15 @@
         </div>
 
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 </html>

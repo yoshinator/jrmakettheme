@@ -1,0 +1,272 @@
+abody {
+    font-family: georgia;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1180px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+
+a {
+  color: #8BA;
+}
+
+/* BEGIN HEADER */
+
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+  color: #000
+}
+
+.header .logo {
+  display: block;
+  float: left;
+
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+a.logo {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #000
+}
+/* MENU */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+span.market{ 
+    color: green;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+/* END HEADER */
+
+
+
+/* BEGIN BANNER */
+#main-banner, #main-banner img {
+    width: 100%;
+
+}
+
+#main-banner {
+    position: relative;
+    clear: both;
+}
+
+#inner-content {
+    position: absolute;
+    min-width: 90%;
+    text-align: center;
+    top: 12%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+#inner-content h4{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    font-size: calc(18px + 4 * (100vw - 400px)/ 400);
+    font-weight: 500;
+    letter-spacing: .3em;
+    text-shadow: 2px 2px #000;
+    line-height: 1.5;
+    display: inline-block;
+    margin: 1rem auto;
+
+}
+
+#inner-content h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    font-size: calc(35px + 13.5 * (100vw - 400px)/ 400);
+    font-weight: 500;
+    display: inline-block;
+    line-height: 1;
+    text-shadow: 2px 2px #000;
+    margin: 1rem auto;
+}
+
+
+#main-banner button {
+    position: relative;
+    margin-top: 10px;
+    width: 40%;
+    height: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: #FFF;
+    font-weight: 900;
+    font-stretch: expanded;
+    background-color: #69970c;
+    transition: 1s ease;
+}
+
+#main-banner button:hover {
+    background-color: #8B6;
+    transform: translateY(-3px)
+
+}
+
+@media (max-width: 768px) {
+    #inner-content h3{
+        display: none;
+    }
+
+    #main-banner button {
+        width: 40%;
+        height: 2%;
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+    #main-banner {
+        clear: both;
+        width: 100%
+    };
+
+
+}
+
+@media (max-width: 320px){
+    #inner-content {
+        display: none;
+    }
+}
+
+/* END BANNER */
+
+#get-quote-biz > h2{
+    text-indent: -10000px;
+    height: 0;
+}
+
+.quote, .business{
+    width: 45%;
+    float: left
+}
+
+#services{
+    clear: both;
+}
+
