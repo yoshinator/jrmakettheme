@@ -53,11 +53,15 @@ transform: translateY(-6px);
     transform: translateX(-50%);
 }
 
-#inner-content h4, h3 {
+#inner-content h4 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #fff;
     text-shadow: 2px 2px #000;
-    font-size: 3vw;
+    font-size: 4vw;
+}
+
+#inner-content h3 { 
+    font-size: 6vw;
 }
 
 #get-quote-banner{
@@ -81,9 +85,12 @@ transform: translateY(-6px);
     background-color: lightgrey;
     color: #000;
 }
-.my-width{
-    width: 100%;
-}
+
 #first-pattern{
-    background: url('./images/morocco-blue.png')
+    background: url('./images/morocco-blue.png');
+    font-size: 2.3vw;
+}
+
+#first-pattern h2{
+    font-size: 3.3vw;
 }
