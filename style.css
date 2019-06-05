@@ -1,3 +1,4 @@
+/* BOOTSTRAP OVERRIDES */
 .success  {
     background-color: green;
 }
@@ -8,32 +9,8 @@
 }
 
 .btn {
-    transition: color .45s ease,background-color .45s ease,border-color .45s ease,box-shadow .45s ease, transform .45s ease;
+    transition: color .45s ease,background-color .45s ease,border-color .45s ease,box-shadow .45s ease, transform .25s ease;
 
-
-}
-
-.btn:hover {
-transform: translateY(-10px);
-}
-
-.jumbotronImage {
-    width: 100%;
-    min-height: 590px;
-
-}
-
-#main-banner{
-        overflow: hidden;
-}
-
-#inner-content {
-    color: #fff;
-    top: 15%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    
 }
 
 .navbar-brand {
@@ -41,18 +18,46 @@ transform: translateY(-10px);
     font-weight: 600;
 }
 
+
+
+/* END BOOTSTRAP OVERRIDES */
+.offscreen {
+    text-indent: -1000000px;
+    height: 0px;
+}
+
 .navbar-brand span{
     color: green !important;
 }
 
+#main-banner{
+    overflow: hidden;
+}
+
+#get-quote-banner:hover {
+-webkit-transform: translateY(-6px);
+transform: translateY(-6px);
+}
+
+.jumbotronImage {
+    width: 100%;
+    min-height: 590px;
+}
+
 #inner-content {
+    color: #fff;
     width: 90%;
+    top: 15%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 
 #inner-content h4, h3 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #fff;
     text-shadow: 2px 2px #000;
+    font-size: 3vw;
 }
 
 #get-quote-banner{
@@ -60,4 +65,25 @@ transform: translateY(-10px);
     font-size:1.3em;
     font-stretch: ultra-expanded;
     font-weight: 800;
+}
+
+.custom-card {
+    border: none;
+    border-radius: 0px;
+    background-color: lightgrey;   
+}
+
+.custom-card:first-of-type {
+    background-color: green;
+    color: #fff;
+}
+.custom-card:first-of-type .btn-success{
+    background-color: lightgrey;
+    color: #000;
+}
+.my-width{
+    width: 100%;
+}
+#first-pattern{
+    background: url('./images/morocco-blue.png')
 }
