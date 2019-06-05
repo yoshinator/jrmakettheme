@@ -18,8 +18,6 @@
     font-weight: 600;
 }
 
-
-
 /* END BOOTSTRAP OVERRIDES */
 .offscreen {
     text-indent: -1000000px;
@@ -77,6 +75,10 @@ transform: translateY(-6px);
     background-color: lightgrey;   
 }
 
+.custom-card .btn:hover {
+    background-color: #585858;
+}
+
 .custom-card:first-of-type {
     background-color: green;
     color: #fff;
@@ -86,6 +88,9 @@ transform: translateY(-6px);
     color: #000;
 }
 
+.custom-card:first-of-type .btn-success:hover{
+background-color: #c3ecc3;
+}
 #first-pattern{
     background: url('./images/morocco-blue.png');
     font-size: 2.3vw;
