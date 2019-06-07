@@ -19,6 +19,11 @@
 }
 
 /* END BOOTSTRAP OVERRIDES */
+
+
+
+
+/* BEGIN NAVBAR CUSTOMIZE */
 .offscreen {
     text-indent: -1000000px;
     height: 0px;
@@ -28,13 +33,20 @@
     color: green !important;
 }
 
+/* END NAVBAR CUSTOMIZE */
+
+
+
+
+/* BEGIN BANNER */
+
 #main-banner{
     overflow: hidden;
 }
 
 #get-quote-banner:hover {
--webkit-transform: translateY(-6px);
-transform: translateY(-6px);
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
 }
 
 .jumbotronImage {
@@ -69,6 +81,26 @@ transform: translateY(-6px);
     font-weight: 800;
 }
 
+/* END BANNER */
+
+
+.service-gradient{
+    background: #ebf1eb; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #ebf1eb 0%, #dee8de 17%, #d1dfd1 33%, #a9e1aa 67%, #9ede9f 83%, #92da93 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  #ebf1eb 0%,#dee8de 17%,#d1dfd1 33%,#a9e1aa 67%,#9ede9f 83%,#92da93 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  #ebf1eb 0%,#dee8de 17%,#d1dfd1 33%,#a9e1aa 67%,#9ede9f 83%,#92da93 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1eb', endColorstr='#92da93',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+.services-display{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 7vw;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    font-size: 9vw;
+    text-transform: uppercase;
+}
 .custom-card {
     border: none;
     border-radius: 0px;
@@ -92,10 +124,10 @@ transform: translateY(-6px);
 background-color: #c3ecc3;
 }
 #first-pattern{
-    background: url('./images/morocco-blue.png');
-    font-size: 2.3vw;
+    background: url('images/crossword.png');
+    font-size: 2.3vw;;
 }
 
-#first-pattern h2{
-    font-size: 3.3vw;
+.card-title {
+    font-size: 3.0vw;
 }
