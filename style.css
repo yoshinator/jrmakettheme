@@ -83,24 +83,8 @@
 
 /* END BANNER */
 
+/* QUOTE OR COMPANY */
 
-.service-gradient{
-    background: #ebf1eb; /* Old browsers */
-    background: -moz-linear-gradient(-45deg,  #ebf1eb 0%, #dee8de 17%, #d1dfd1 33%, #a9e1aa 67%, #9ede9f 83%, #92da93 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg,  #ebf1eb 0%,#dee8de 17%,#d1dfd1 33%,#a9e1aa 67%,#9ede9f 83%,#92da93 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg,  #ebf1eb 0%,#dee8de 17%,#d1dfd1 33%,#a9e1aa 67%,#9ede9f 83%,#92da93 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1eb', endColorstr='#92da93',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
-}
-.services-display{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    font-size: 7vw;
-    color: #fff;
-    text-shadow: 2px 2px #000;
-    font-size: 9vw;
-    text-transform: uppercase;
-}
 .custom-card {
     border: none;
     border-radius: 0px;
@@ -123,10 +107,37 @@
 .custom-card:first-of-type .btn-success:hover{
 background-color: #c3ecc3;
 }
+
+/* END QUOTE OR COMPANY */
+
+
 #first-pattern{
     background: url('images/crossword.png');
     font-size: 2.3vw;;
 }
+
+.service-gradient{
+    background: #ebf1eb; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #ebf1eb 0%, #dee8de 17%, #d1dfd1 33%, #a9e1aa 67%, #9ede9f 83%, #92da93 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  #ebf1eb 0%,#dee8de 17%,#d1dfd1 33%,#a9e1aa 67%,#9ede9f 83%,#92da93 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  #ebf1eb 0%,#dee8de 17%,#d1dfd1 33%,#a9e1aa 67%,#9ede9f 83%,#92da93 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1eb', endColorstr='#92da93',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+.services-display{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 7vw;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    font-size: 9vw;
+    text-transform: uppercase;
+}
+
+.service-card{
+    border-bottom: 3px solid green;
+}
+
 
 .card-title {
     font-size: 3.0vw;
