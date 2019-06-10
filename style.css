@@ -14,8 +14,13 @@
 }
 
 .navbar-brand {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+	font-size: 1.9em;
     font-weight: 600;
+}
+
+.nav-link {
+	font-size: 1.32em;
 }
 
 /* END BOOTSTRAP OVERRIDES */
@@ -237,11 +242,9 @@ background-color: #c3ecc3;
 /* SERVICE CARDS */
 #first-pattern{
     background: url('images/crossword.png');
-    font-size: 2.3vw;;
 }
 .service-card{
     border-bottom: 3px solid green;
-
 }
 
 .btn-quote{
